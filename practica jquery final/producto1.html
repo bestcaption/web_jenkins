@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novaplast cemento</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos-productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="funciones.js"></script>
+</head>
+
+<body>
+ <!-- NAVBAR -->
+ <nav class="navbar bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logoCuartero.png" alt="Bootstrap" width="130">
+      </a>
+
+      <div class="dropdown mt2">
+        <a href="#" class="list-group-item-secondary dropdown-toggle" id="carritoDropdown" role="button"
+          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="images/carrito.png" alt="" class="navbar-icon">
+          <span class="badge bg-danger" id="carritoBadge">0</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="carritoDropdown">
+          <h6 class="dropdown-header">Carrito de Compras</h6>
+          <ul id="listaCarritoDropdown" class="dropdown-list">
+          </ul>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-item"><strong>Total: <span id="totalCarrito">0.00€</strong></span></div>
+          <a href="#" class="dropdown-item">Ir al carrito</a>
+        </div>
+      </div>
+
+      <form class="d-flex" role="search" id="formBusqueda">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Haz tu búsqueda..."
+          aria-label="Search">
+        <button class="btn btn-light" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark background text-bg-danger">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav ">
+          <li>
+            <ul>
+              <a class="navbar-brand botones-navbar" href="#">PROMOCIONES</a>
+              <a class="navbar-brand botones-navbar" href="#">PRODUCTOS</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="images/cemento1kg.jpg" class="img-fluid" alt="Producto">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-4 card-title">Novaplast Cemento blanco 1kg</h1>
+        <p class="lead">Cemento especialmente indicado para reparaciones en baños, cocinas, así como el
+            colocado
+            de solados y pavimentaciones de baja resistencia como plaquetas y terrazos.</p>
+        <p>Precio: <span class="badge texto">1.90€</span></p>
+        <p>Disponibilidad: <span class="text-success">En stock</span></p>
+        <p>Color: Blanco</p>
+        <p>Marca: Novaplast</p>
+        <p class="mt-4">Cantidad:
+          <input type="number" class="form-control" value="1" min="1">
+        </p>
+        <button class="btn btn-outline-secondary addcarrito">Agregar al carrito</button>
+      </div>
+    </div>
+  
+    <div class="row mt-5">
+      <div class="col">
+        <h2>Detalles del Producto</h2>
+        <p>Cemento especialmente indicado para reparaciones en baños, cocinas, así como el colocado de solados y pavimentaciones de baja resistencia como plaquetas y terrazos.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
